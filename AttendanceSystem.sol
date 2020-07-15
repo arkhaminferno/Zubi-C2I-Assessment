@@ -8,7 +8,7 @@ contract AttendanceSystem{
     mapping(address=>Student) private Studentdata;
     
     constructor() public{
-        require(msg.sender == Teacher);
+        msg.sender == Teacher;
     }
     
     struct Student{
